@@ -28,13 +28,13 @@ class Handler {
     	}
     }
 
-	private ServerSocket createServer(int port){
-		ServerSocket tmp = null;
+    private ServerSocket createServer(int port){
+	ServerSocket tmp = null;
         try{
             tmp = new ServerSocket(port);
         } catch(IOException e){
             System.err.println(e.getMessage());
         }
         return tmp;
-	}
+    }
 }
